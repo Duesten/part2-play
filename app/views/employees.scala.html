@@ -1,3 +1,6 @@
-@(arg : String)
-
-@arg
+@(arg : Vector[Person])
+<ul>
+@for(p <- arg){
+    <li><a href="/details/@p.id" > @p.name</a></li>
+}
+</ul>
